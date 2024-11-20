@@ -34,7 +34,7 @@ return arr;
 
 // Функція для запиту масиву та напрямку сортування
 function getUserInput() {
-rl.question('Введіть масив чисел через кому (наприклад, 1, 2, 3, -2, -1): ', (inputArray) => {
+rl.question('Введіть масив чисел через кому (наприклад: 1, 2, 3, -2, -1): ', (inputArray) => {
 const array = inputArray.split(',').map(item => parseInt(item.trim(), 10));
 
 rl.question('Оберіть варіант: \n1. Сортувати за зростанням (asc) \n2. Сортувати за спаданням (desc) \n3. Сортувати обидва напрямки (asc і desc) \nВведіть число (1, 2, або 3): ', (option) => {
